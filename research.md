@@ -4,11 +4,11 @@ permalink: /research/
 title: Research
 ---
 
-My area of intersts are computing systems and compiler techniques,
-with a focus on improving system performance and efficiency via
-compiler techniques.
+My area of intersts are computing systems and compiler.
+I am insterested in building efficient systems by exploring
+applications' properties via compiler techniques.
 
-<h2>Selected Publications</h2>
+<h2>Selected Publications <a href="https://scholar.google.com/citations?user=34_6IksAAAAJ&hl=en">Google Scholar</a></h2>
 <ul>
 	<li>
 		<b>"CARE: Compiler-Assisted Recovery for Soft Failures."</b> (<span style="color:red;font-style:italic"><b>Best Student Paper Finalist</b></span>)<br>
