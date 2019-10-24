@@ -29,7 +29,7 @@ applications' properties via compiler techniques.
 
 	<li>
 		<b>"Active Burst-Buffer: In-Transit Processing Integrated into Hierarchical Storage."</b> (<span style="color:red;font-style:italic"><b>Best Paper</b></span>)<br>
-		<i><b>Chao Chen</b>, Michael Lang, Latchesar Lonkov and Yong Chen.</i><br>
+		<i><b>Chao Chen</b>, Michael Lang, Latchesar Ionkov and Yong Chen.</i><br>
 		11th IEEE International Conference on Networking, Architecture, and Storage (NAS), 2016<br>
 		<a href="ABB.pdf"><div class="color-button">pdf</div></a>
 		<a href="https://ieeexplore.ieee.org/document/7549390"><div class="color-button">cite</div></a>
