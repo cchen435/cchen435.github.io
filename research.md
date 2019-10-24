@@ -12,7 +12,7 @@ applications' properties via compiler techniques.
 <ul>
 	<li>
 		<b>"CARE: Compiler-Assisted Recovery for Soft Failures."</b> (<span style="color:red;font-style:italic"><b>Best Student Paper Finalist</b></span>)<br>
-		<i><b>Chao Chen</b>, Greg Esienhauer, Santosh Pande, Qiang Guan.</i><br>
+		<i><b>Chao Chen</b>, Greg Eisenhauer, Santosh Pande, Qiang Guan.</i><br>
 		International Conference for High Performance Computing, Networking, Storage, and Analysis (SC), 2019<br>
 		<a href="Requst through email"><div class="color-button">pdf</div></a>
 		<a href="https://sc19.supercomputing.org/presentation/?id=pap373&sess=sess165"><div class="color-button">cite</div></a>
