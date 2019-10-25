@@ -4,9 +4,9 @@ permalink: /research/
 title: Research
 ---
 
-My area of intersts are computing systems and compiler.
-I am insterested in building efficient systems by exploring
-applications' properties via compiler techniques.
+My areas of interest include computing systems and compilers. 
+I am particularly interested in applying compiler techniques 
+to problems such as application performance and resilience.
 
 <h2>Selected Publications <a href="https://scholar.google.com/citations?user=34_6IksAAAAJ&hl=en">Google Scholar</a></h2>
 <ul>
