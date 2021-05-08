@@ -1,26 +1,138 @@
-# Site settings
-title: Chao Chen
-# general_email: kandy.cs@gmail.com
-academic_email: chao.chen@gatech.edu
+# Site
+repository: cchen435/cchen435.github.io
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
-description: > # this means to ignore newlines until "baseurl:" Give a brief description of yourself, and maybe your passion/interests. It is displayed in search results.
+# Data type version
+version: 2
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+# Personal info
+name: Chao Chen
+title: Ph.D. Georgia Institute of Technology
+email: chao.chen@gatech.edu
+email_title: Email
+# phone: 07845248563
+# phone_title: Phone
+# website: sproogen.github.io/modern-resume-theme
+# website_title: Web
 
-url: "http://cchen435.com" # the base hostname & protocol for your site
+# Dark Mode (true/false/never)
+darkmode: false
 
+# Social links
 # twitter_username: jekyllrb
-github_username: kandycs
+github_username:  cchen435
+# stackoverflow_uername: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
 linkedin_username: kandycs
-googlescholar: https://scholar.google.com/citations?user=34_6IksAAAAJ&hl=en
-# facebook_username: facebook_username
-# feel free to add other links here; you will have to add the SVG icon in _layouts/footer.html
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+- title: Google Scholar
+  icon: ai ai-google-schola
+  url: https://scholar.google.com/citations?user=34_6IksAAAAJ&hl=e
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile.jpeg
+about_content: > # this means to ignore newlines until the next config item.
+  I am a software development engineer from Amazon Science. I am working on deep learning compiler 
+  and framework to speedup the training and inference of deep learning workloads. I got my Ph.D. 
+  from Georgia Institute of Technology, and was advised by [Santosh Pande](https://sites.google.com/site/profsantoshpande/) 
+  and [Greg Eisenhauer](https://www.cc.gatech.edu/~eisen/). Before that, I received my M.S. and B.S. 
+  degrees from Hunan University (Changsha, China) under the supervision of Dr. Cheng Xu (徐成).
+    
+  In general, my research interest lies in the intersection of compiler and system. I am particularly 
+  interested in applying compiler techniques to problems such as application performance and resilience.
+
+content:
+  - title: News
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - May 2021: Our paper IterPro is accepted by IEEE TPDS. 
+      - April 2021: I joined amazon science as software development engineer. 
+      - Dec 2020: I defended my dissertation. 
+      - Nov 2020: I joined amazon SCOT as software development engineer. 
+      - May 2019: Our paper CARE is accepted by SC'19, and nominated as a Best Student Paper Finalist
+      - Jan 2018: Our paper LADR is accespted by HPDC'18.
+      - Sep 2016: I did internship at VMWare CTO Office, Boston, MA.
+      - Aug 2016: Two papers related to active storage were awarded as Best Papers.
+
+  - title: Selected Publications 
+    layout: publist
+    content:
+      - layout: top
+        title: "Near-zero Downtime Recovery from Transient-Error-Induced Crashes."
+        authors: Chao Chen, Greg Eisenhauer and Santosh Pande.
+        caption: Accepted by IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021.
+
+      - layout: top
+        title: "CARE: Compiler-Assisted Recovery for Soft Failures." 
+        note: (Best Student Paper Finalist)
+        authors: Chao Chen, Greg Eisenhauer, Santosh Pande and Qiang Guan.
+        caption: International Conference for High Performance Computing, Networking, Storage, and Analysis (SC), 2019.
+      
+      - layout: top
+        title: "LADR: Low-cost Application-level Detector for Reducing Silent Output Corruptions." 
+        authors: Chao Chen, Greg Eisenhauer, Matthew Wolf and Santosh Pande
+        caption: ACM International Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2018.
+
+      - layout: top
+        title: "Active Burst-Buffer: In-Transit Processing Integrated into Hierarchical Storage." 
+        note: (Best Paper)
+        authors: Chao Chen, Michael Lang, Latchesar Ionkov and Yong Chen
+        caption: 11th IEEE International Conference on Networking, Architecture, and Storage (NAS), 2016.
+
+      - layout: top
+        title: "Rethinking High Performance Computing System Architecture for Scientific Big Data Applications." 
+        note: (Best Paper)
+        authors: Yong Chen, Chao Chen, Yanlong Yin, Xianhe Sun, Rajeev Thakur and William Gropp.
+        caption: 14th IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)
+
+      - layout: top
+        title: "A Decoupled Execution Paradigm for Data-Intensive High-End Computing." 
+        authors: Yong Chen, Chao Chen, Xian-He Sun, William D. Gropp, and Rajeev Thakur.
+        caption: International Conference on Cluster Computing (Cluster), 2012.
+
+      - layout: top
+        title: "DOSAS:Mitigating the Resource Contention in Active Storage Systems." 
+        authors: Chao Chen, Yong Chen and Philip C. Roth.
+        caption: International Conference on Cluster Computing (Cluster), 2012.
+
+      - layout: top
+        title: "Dynamic Active Storage for High Performance I/O." 
+        authors: Chao Chen and Yong Chen.
+        caption: 41st International Conference on Parallel Processing (ICPP), 2012.
+
+# Footer
+footer_show_references: false
+references_title: References on request
 
 # Build settings
-markdown: kramdown
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
 
-kramdown:
-  math_engine: mathjax
+data_dir: _test/_data
 
-# Other options
-permalink: blog/:year/:month/:title
+include:
+ - _test
+
+exclude:
+  - vendor
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
