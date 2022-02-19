@@ -125,6 +125,11 @@ content:
         authors: Chao Chen and Yong Chen.
         caption: 41st International Conference on Parallel Processing (ICPP), 2012.
 
+    - title: Services
+      layout: text
+      content: 
+      Program Committee: IPDPS'22, HPDC'22
+
 # Footer
 footer_show_references: false
 references_title: References on request
