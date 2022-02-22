@@ -1,154 +1,315 @@
-# Site
-repository: http://www.cchen435.com
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
 
-# Data type version
-version: 2
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# Personal info
-name: Chao Chen
-title: Software Development Engineer, Amazon Science
-email: chao.chen@gatech.edu
-email_title: Email
-# phone: 07845248563
-# phone_title: Phone
-# website: sproogen.github.io/modern-resume-theme
-# website_title: Web
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Dark Mode (true/false/never)
-darkmode: false
+# Site Settings
+locale                   : "en-US"
+title                    : # "Site Title"
+title_separator          : "-"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : # "Chao Chen"
+description              : # "Amazon Science."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  giscus:
+    repo_id              : # Shown during giscus setup at https://giscus.app
+    category_name        : # Full text name of the category
+    category_id          : # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+  hide                   : true # true, false (default)
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
 
-# Social links
-# twitter_username: jekyllrb
-github_username:  cchen435
-# stackoverflow_uername: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-# instagram_username: jekyll
-linkedin_username: kandycs
-# xing_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: jekyll
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
 
-# Additional icon links
-additional_links:
-- title: Google Scholar
-  icon: ai ai-google-scholar ai-5x
-  url: https://scholar.google.com/citations?user=34_6IksAAAAJ&hl=e
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
 
-# About Section
-# about_title: About Me (Use this to override about section title)
-about_profile_image: images/profile.jpeg
-about_content: > # this means to ignore newlines until the next config item.
-  I am a software development engineer from Amazon Science. I am working on deep learning compiler 
-  and framework to speedup the training and inference of deep learning workloads. I got my Ph.D. 
-  from Georgia Institute of Technology, and was advised by [Santosh Pande](https://sites.google.com/site/profsantoshpande/) 
-  and [Greg Eisenhauer](https://www.cc.gatech.edu/~eisen/). Before that, I received my M.S. and B.S. 
-  degrees from Hunan University (Changsha, China) under the supervision of Dr. Cheng Xu (徐成).
-    
-  In general, my research interest lies in the intersection of compiler and system. I am particularly 
-  interested in applying compiler techniques to problems such as application performance and resilience.
 
-content:
-  - title: News
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      - Dec 2021: A paper about our recent research -- CASE, is accepted by PPoPP'12. 
-                  CASE improves GPU utilization by sharing among different workloads 
-      - May 2021: A paper about our recent work -- IterPro, is accepted by IEEE TPDS.
-                  IterPro explores features of modern compiler optimizations for almost 
-                  free resilience. 
-      - April 2021: I joined amazon science as software development engineer. 
-      - Dec 2020: I defended my dissertation. 
-      - Nov 2020: I joined amazon SCOT as software development engineer. 
-      - May 2019: Our paper CARE is accepted by SC'19, and nominated as a Best Student Paper Finalist.
-                  CARE is a instant failure recovery framework. It incurs zero runtime overhead, during 
-                  the normal execution of applications.
-      - Jan 2018: Our paper LADR is accespted by HPDC'18.
-      - Sep 2016: I did internship at VMWare CTO Office, Boston, MA.
-      - Aug 2016: Two papers related to active storage were awarded as Best Papers.
+# Site Author
+author:
+  name             : "Chao Chen"
+  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image.
+  bio              : "Amazon Science"
+  location         : "Santa Clara, CA"
+  email            : "chao.chen@gatech.edu"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:your.name@email.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/cchen435"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kandycs/"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar ai-1x"
+      url: "https://scholar.google.com/citations?user=34_6IksAAAAJ&hl=e"
+  sidebar:
+    - title: "Title"
+      image: http://placehold.it/350x250
+      image_alt: "image"
+      text: "Some text here."
+    - title: "Another Title"
+      text: "More text here."
 
-  - title: Selected Publications 
-    layout: publist
-    content:
-      - layout: top
-        title: "CASE: A Compiler-Assisted SchEduling Framework forMulti-GPU Systems."
-        authors: Chao Chen, Chris Porter and Santosh Pande.
-        caption: To appear in 27th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming (PPoPP), 2022.
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
 
-      - layout: top
-        title: "Near-zero Downtime Recovery from Transient-Error-Induced Crashes."
-        authors: Chao Chen, Greg Eisenhauer and Santosh Pande.
-        caption: Accepted by IEEE Transactions on Parallel and Distributed Systems (TPDS), 2021.
 
-      - layout: top
-        title: "CARE: Compiler-Assisted Recovery for Soft Failures." 
-        note: (Best Student Paper Finalist)
-        authors: Chao Chen, Greg Eisenhauer, Santosh Pande and Qiang Guan.
-        caption: International Conference for High Performance Computing, Networking, Storage, and Analysis (SC), 2019.
-      
-      - layout: top
-        title: "LADR: Low-cost Application-level Detector for Reducing Silent Output Corruptions." 
-        authors: Chao Chen, Greg Eisenhauer, Matthew Wolf and Santosh Pande
-        caption: ACM International Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2018.
-
-      - layout: top
-        title: "Active Burst-Buffer: In-Transit Processing Integrated into Hierarchical Storage." 
-        note: (Best Paper)
-        authors: Chao Chen, Michael Lang, Latchesar Ionkov and Yong Chen
-        caption: 11th IEEE International Conference on Networking, Architecture, and Storage (NAS), 2016.
-
-      - layout: top
-        title: "Rethinking High Performance Computing System Architecture for Scientific Big Data Applications." 
-        note: (Best Paper)
-        authors: Yong Chen, Chao Chen, Yanlong Yin, Xianhe Sun, Rajeev Thakur and William Gropp.
-        caption: 14th IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)
-
-      - layout: top
-        title: "A Decoupled Execution Paradigm for Data-Intensive High-End Computing." 
-        authors: Yong Chen, Chao Chen, Xian-He Sun, William D. Gropp, and Rajeev Thakur.
-        caption: International Conference on Cluster Computing (Cluster), 2012.
-
-      - layout: top
-        title: "DOSAS:Mitigating the Resource Contention in Active Storage Systems." 
-        authors: Chao Chen, Yong Chen and Philip C. Roth.
-        caption: International Conference on Cluster Computing (Cluster), 2012.
-
-      - layout: top
-        title: "Dynamic Active Storage for High Performance I/O." 
-        authors: Chao Chen and Yong Chen.
-        caption: 41st International Conference on Parallel Processing (ICPP), 2012.
-
-    - title: Services
-      layout: text
-      content: 
-      Program Committee: IPDPS'22, HPDC'22
-
-# Footer
-footer_show_references: false
-references_title: References on request
-
-# Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
-
-data_dir: _test/_data
-
+# Reading Files
 include:
- - _test
-
+  - .htaccess
+  - _pages
+  - _files
 exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
   - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
 plugins:
- - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      sidebar: 
+        nav: "main"

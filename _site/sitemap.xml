@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_files/CARE.pdf</loc>
+<lastmod>2022-02-22T10:04:41-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_files/CASE.pdf</loc>
+<lastmod>2022-02-22T10:09:56-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_files/CV.pdf</loc>
+<lastmod>2021-11-29T13:04:27-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_files/IterPro.pdf</loc>
+<lastmod>2022-02-22T10:08:29-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_files/LADR.pdf</loc>
+<lastmod>2022-02-22T10:11:57-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_files/RS.pdf</loc>
+<lastmod>2021-11-15T23:01:36-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_files/TS.pdf</loc>
+<lastmod>2021-10-13T09:57:19-05:00</lastmod>
+</url>
+</urlset>
