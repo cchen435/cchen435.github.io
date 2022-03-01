@@ -13,7 +13,7 @@ of [Dr. Cheng Xu (徐成)](http://esnl.hnu.edu.cn/info/1008/1271.htm)
 In general, my research interest lies in the intersection of compiler and system. 
 I am particularly interested in applying compiler techniques to problems such as application performance and resilience.
 
-[[CV](/_files/cv.pdf)], [[Research Statement](/_files/RS.pdf)], [[Teaching Statement](/_files/TS.pdf)]
+[[CV](/_files/CV.pdf)], [[Research Statement](/_files/RS.pdf)], [[Teaching Statement](/_files/TS.pdf)]
 
 # Updates
 - Dec 2021: CASE is accepted by PPoPP’22. It provides a scheduling framework for improving GPU utilizations.
