@@ -3,7 +3,7 @@ title: "Introduction"
 permalink: /
 layout: single
 ---
-I am a software development engineer from Amazon Science, working on deep learning 
+I am a software development engineer from Intel, working on deep learning 
 compiler and framework. I got my Ph.D. from Georgia Institute of Technology, and 
 was advised by [Santosh Pande](https://sites.google.com/site/profsantoshpande/) 
 and [Greg Eisenhauer](https://www.cc.gatech.edu/~eisen/). Before that, I received 

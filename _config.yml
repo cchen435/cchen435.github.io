@@ -20,7 +20,7 @@ title                    : # "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : # "Chao Chen"
-description              : # "Amazon Science."
+description              : # "Intel"
 url                      : https://www.cchen435.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : cchen435/cchen435.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "Chao Chen"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image.
-  bio              : "Amazon Science"
+  bio              : "Intel"
   location         : "Santa Clara, CA"
   email            : "chao.chen@gatech.edu"
   links:
